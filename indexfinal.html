@@ -9,39 +9,167 @@
 
         *{
             box-sizing: border-box;
+            background-color: rgb(246, 246, 211);
         }
 
         .box{
-            width: 70%;
-        }
-        
-        .inline-block{
-            display: inline-block;
+            width: 600px;
+            padding: 5%;
+            margin-left: 50px;
+            margin-top: 0px;
+            
         }
 
-        .imagen-presentacion{
-            width: 350px;
+        /*#texto{
+           
+           background-color: blueviolet;
+            
         }
+
+        #imagen{
+            background-color: rgb(77, 229, 97);
+        }*/
+
+        .flex{
+            display: flex;
+            flex-direction: space-evenly;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 57px;
+            font-family: 'helvetica';
+            color: rgb(36, 36, 36);
+            padding-left: 50px;
+            
+        }
+
+        p{
+            font-size: 14px;
+            font-family: 'helvetica';
+            color: rgb(36, 36, 36);
+            
+        }
+
+        .button {
+        font-weight: bold;
+        color: rgb(36, 36, 36);
+        display: inline-block;
+        border: none;
+        text-align: end;
+        font-size: 14px;
+        padding: 20px;
+        width: 500px;
+        transition: all 0.5s;
+        cursor: pointer;
+        
+        }
+
+        .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+        }
+
+        .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+        }
+
+        .button:hover span {
+        padding-right: 25px;
+        opacity: 0.8;
+        }
+
+        .button:hover span:after {
+        opacity: 0.9;
+        right: 0;
+        }
+
+        .box1{
+            width: 250px;
+            border-radius: 15px;
+            background-color: rgb(211, 172, 248);
+            padding: 10px;
+            padding-bottom: 20px;
+            margin-top: 30px;
+            text-align: center;
+            
+        }
+        
+        .flex-intereses-contacto{
+            display: flex;
+            flex-direction: space-evenly;
+            gap: 100px;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        h2{
+            background-color: rgb(211, 172, 248);
+            font-size: 30px;
+            font-family: helvetica;
+        }
+
+        h4{
+            background-color: rgb(211, 172, 248);
+            margin: 5px;
+            font-size: 15px;
+            font-family: helvetica;
+            font-weight: lighter;
+        }
+
+        
+        
+       
 
     </style>
 
 </head>
 <body>
     
-<div class="box">
+    <div class="flex">
+       <div id="texto" class="box"> <h1>MARICARI</h1>
+            <p>Os presento a Maricari una diseñadora gráfica y digital de Albacete. Durante 7 años estuvo viviendo en Barcelona por su trabajo, pero desde hace un par de años reside en Valencia donde está buscando continuar su carrera profesional. </p>
+            <p>Este curso, está emocionada por actualizar sus conocimientos en diseño web, una habilidad que considera esencial en el mundo actual. Su pasión por el diseño y su deseo de seguir aprendiendo la convierten en una profesional en constante evolución</p><br>
+            <button class="button" style="vertical-align:middle"><span>Saber más </span></button>
+        </div>
+    
 
-    <span class="inline-block box">
-        <h1>Maricari</h1>
-        <p>Os presento a Maricari una diseñadora gráfica y digital de Albacete. Durante 7 años estuvo viviendo en Barcelona por su trabajo, pero desde hace un par de años reside en Valencia donde está buscando continuar su carrera profesional. </p>
-        <p>Este curso, está emocionada por actualizar sus conocimientos en diseño web, una habilidad que considera esencial en el mundo actual. Su pasión por el diseño y su deseo de seguir aprendiendo la convierten en una profesional en constante evolución</p>
-    </span>
+
+        <div id="imagen" class="box">
+            <img src="img/imagen-presentacion-500x500.jpg" alt="imagen-presentacion">
+        </div>
+
+    </div>
+
+    <div class="flex-intereses-contacto">
+
+        <div class=" box1">
+            <h2>Intereses</h2>
+            <h4>montar en bici</h4>
+            <h4>ver series</h4>
+            <h4>arte</h4>
+        </div>
+
+        <div class="box1">
+            <h2>Contacto</h2>
+            <h4>montar en bici</h4>
+            <h4>ver series</h4>
+            <h4>arte</h4>
+        </div>
+    </div>
 
 
-    <span class="inline-block">
-        <img class="imagen-presentacion" src="img/Diseño sin título (1).png" alt="presentacion-imagen">
-    </span>
-
-</div>
 
 </body>
 </html>
